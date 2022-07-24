@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+* {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: rgb(240, 240, 240);
+  font-size: 35px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 187, 36);
+  animation: fadeInAnimation ease-out 3s 1 forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46);
+}
+body::-webkit-scrollbar-thumb {
+  background: rgb(255, 187, 36);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 149, 0);
+}
+
+header {
+  padding: 10px;
+}
+
+.departures {
+  background-color: rgb(6, 6, 6);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.departures table {
+  width: 100%;
+  background-color: rgb(46, 46, 46);
+  text-align: left;
+}
+
+.departures table td {
+  height: 50px;
+}
+
+.departures table div {
+  border: solid 4px rgb(26, 26, 26);
+  background-color: black;
+  min-width: 20px;
+  height: 40px;
+  float: left;
+}
+
+#time {
+  padding-left: 1rem;
+  width: 160px;
+}
+
+#destination {
+  width: 260px;
+}
+
+#flight {
+  width: 205px;
+}
+
+#gate {
+  width: 135px;
+}
+
+#remarks {
+  width: 260px;
+}
+
+.flip {
+  animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
