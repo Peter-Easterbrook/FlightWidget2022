@@ -34,7 +34,35 @@ let flights = [
     destination: 'TOKYO',
     flight: 'TK 211',
     gate: 'A 32',
+    remarks: 'EARLY',
+  },
+  {
+    time: '16:01',
+    destination: 'MOSCOW',
+    flight: 'SU 721',
+    gate: 'B 03',
+    remarks: 'ON TIME',
+  },
+  {
+    time: '17:01',
+    destination: 'PARIS',
+    flight: 'FR 721',
+    gate: 'B 04',
+    remarks: 'ON TIME',
+  },
+  {
+    time: '18:01',
+    destination: 'NEW YORK',
+    flight: 'US 721',
+    gate: 'B 05',
     remarks: 'DELAYED',
+  },
+  {
+    time: '19:01',
+    destination: 'BANGKOK',
+    flight: 'BK 721',
+    gate: 'B 06',
+    remarks: 'EARLY',
   },
 ];
 
@@ -45,8 +73,12 @@ const destinations = [
   'LONDON',
   'OMAN',
   'BEIRUT',
+  'MOSCOW',
+  'PARIS',
+  'NEW YORK',
+  'BANGKOK',
 ];
-const remarks = ['ON TIME', 'DELAYED', 'CANCELLED'];
+const remarks = ['ON TIME', 'DELAYED', 'CANCELLED', 'EARLY'];
 let hour = 15;
 
 function populateTable() {
